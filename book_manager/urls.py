@@ -22,5 +22,5 @@ urlpatterns = [
     # path('api/crm/schema/swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     # path('api/crm/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
     path("admin/", admin.site.urls),
-    # path('api/', include('books.api.urls')),
+    path('api/v1/', include('apps.apis.urls')),
 ]
