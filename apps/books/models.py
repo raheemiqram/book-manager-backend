@@ -1,6 +1,8 @@
 from django.db import models
+from apps.core.models import BaseModel
 
-class Book(models.Model):
+
+class Book(BaseModel):
     title = models.CharField(max_length=255)
     year = models.IntegerField()
     author = models.CharField(max_length=255)
@@ -9,7 +11,7 @@ class Book(models.Model):
         return self.title
 
 
-class BookList(models.Model):
+class BookList(BaseModel):
     name = models.CharField(max_length=255)
     books = models.ManyToManyField(Book, related_name="lists")
 
