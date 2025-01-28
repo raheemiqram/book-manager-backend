@@ -2,3 +2,4 @@ Django
 djangorestframework
 drf-spectacular
 ruff
+django-cors-headers
