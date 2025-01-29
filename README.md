@@ -42,3 +42,12 @@ This is the backend of the **Book Manager** application, built with **Django** a
 6. **Run the development server**
     ```bash
    python manage.py runserver
+
+7. **Test**
+    ```bash
+   python manage.py tests
+   
+
+8**Ruff **
+    ```bash
+   ruff check
