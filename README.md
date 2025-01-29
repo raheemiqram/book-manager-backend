@@ -48,8 +48,7 @@ This is the backend of the **Book Manager** application, built with **Django** a
     ```bash
    python manage.py tests  # on windows  python .\manage.py tests
 
-   
 
-8. **Ruff **
+8. **Ruff**
     ```bash
    ruff check
