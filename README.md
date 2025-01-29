@@ -37,7 +37,7 @@ This is the backend of the **Book Manager** application, built with **Django** a
    
 5. **Add Testing data**
     ```bash
-   python manage.py runserver
+   python manage.py seed_books # on windows  python .\manage.py seed_books
 
 6. **Run the development server**
     ```bash
