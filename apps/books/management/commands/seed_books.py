@@ -14,7 +14,7 @@ class Command(BaseCommand):
         Book.objects.all().delete()
 
         books = []
-        for i in range(1, 10):
+        for i in range(1, 12):
             book = Book(
                 title=f"Book Title {i}",
                 year=random.randint(1900, 2025),
@@ -27,7 +27,7 @@ class Command(BaseCommand):
 
         all_books = Book.objects.all()
 
-        for i in range(1, 11):
+        for i in range(1, 12):
             book_list = BookList.objects.create(name=f"Book List {i}")
             book_list.books.set(random.sample(list(all_books), k=random.randint(1, 8)))
             self.stdout.write(f"Created Book List {book_list.name} with {book_list.books.count()} books.")
